@@ -19,7 +19,7 @@ module.exports = {
 	facebook: {		// passport facebook
 		clientID: '135734880327081',
 		clientSecret: 'c8be0cd03e0add31f78ffdb443c7ba29',
-		callbackURL: 'https://board-24545.herokuapp.com/auth/facebook/callback'
+		callbackURL: '/auth/facebook/callback'
 	},
 	twitter: {		// passport twitter
 		clientID: 'id',
