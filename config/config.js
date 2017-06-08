@@ -30,7 +30,7 @@ module.exports = {
 		clientID: 'TG68fRPi72U9iFbQ_NE6',
 		clientSecret: 'GoJGYca2a2',
 		callbackURL: '/auth/google/callback'
-	}
+	},
     naver: {		// passport google
 		clientID: 'TG68fRPi72U9iFbQ_NE6',
 		clientSecret: 'GoJGYca2a2',
