@@ -13,6 +13,7 @@ var local_signup = require('./passport/local_signup');
 var facebook = require('./passport/facebook');
 var twitter = require('./passport/twitter');
 var google = require('./passport/google');
+var naver = require('./passport/naver');
 
 module.exports = function (app, passport) {
 	console.log('config/passport 호출됨.');
@@ -45,6 +46,7 @@ module.exports = function (app, passport) {
 	passport.use('facebook', facebook(app, passport));
 	passport.use('twitter', twitter(app, passport));
 	passport.use('google', google(app, passport));
-	console.log('5가지 passport 인증방식 설정됨.');
+    passport.use('naver', naver(app, passport));
+	console.log('6가지 passport 인증방식 설정됨.');
 	
 };

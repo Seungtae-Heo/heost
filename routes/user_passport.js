@@ -94,5 +94,17 @@ module.exports = function(router, passport) {
         successRedirect : '/profile',
         failureRedirect : '/'
     }));
+    
+    
+    // 패스포트 - 네이버 인증 라우팅 
+    router.route('/auth/naver').get(passport.authenticate('naver', { 
+        scope : 'email' 
+    }));
+
+    // 패스포트 - 네이버 인증 콜백 라우팅
+    router.route('/auth/naver/callback').get(passport.authenticate('naver', {
+        successRedirect : '/profile',
+        failureRedirect : '/'
+    }));
 
 };
