@@ -27,8 +27,8 @@ module.exports = {
 		callbackURL: '/auth/twitter/callback'
 	},
 	google: {		// passport google
-		clientID: 'TG68fRPi72U9iFbQ_NE6',
-		clientSecret: 'GoJGYca2a2',
+		clientID: '870785152843-a0b5jb8plbtls403ok9rvhrjn0j9090e.apps.googleusercontent.com',
+		clientSecret: 'OLWERe2AVnUxhaBe3yXHxypU',
 		callbackURL: '/auth/google/callback'
 	},
     naver: {		// passport google
