@@ -7,15 +7,12 @@
 <body>
 	<h1>글 리스트</h1>
 	<br>
-	<form method="post" action="/process/listpost">
-		<table>
-			<tr>
-				<td><label>아래 [전송] 버튼을 누르세요.</label></td>
-			</tr>
-		</table>
+	<form id="request_posts" method="post" action="/process/listpost">
 		<input type="hidden" name="page" value="0" />
 		<input type="hidden" name="perPage" value="5" />
-		<input type="submit" value="전송" name="" />
+
 	</form>
+    <script type="text/javascript"> 
+this.document.getElementById("request_posts").submit()
 </body>
 </html>
