@@ -61,6 +61,15 @@
 		                        <strong>Name</strong>: <%= user.google.name %>
 		                    </p>
 						<% } %>
+                        <% } else if (user.provider == 'naver') { %>
+							<h3 class="text-primary"><span class="fa fa-google"></span> Naver Profile</h3>
+							<br>
+		                    <p>
+		                        <strong>User ID</strong>: <%= user.naver.id %><br><br>
+		                        <strong>E-mail</strong>: <%= user.naver.email %><br><br>
+		                        <strong>Name</strong>: <%= user.naver.name %>
+		                    </p>
+						<% } %>
 		                	
 						<br>
 		            </div>
