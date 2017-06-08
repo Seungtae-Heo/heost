@@ -43,15 +43,7 @@
 		                        <strong>User ID</strong>: <%= user.facebook.id %><br><br>
 		                        <strong>E-mail</strong>: <%= user.facebook.email %><br><br>
 		                        <strong>Name</strong>: <%= user.facebook.name %>
-		                    </p>
-		                <% } else if (user.provider == 'twitter') { %>
-							<h3 class="text-primary"><span class="fa fa-twitter"></span> Twitter Profile</h3>
-							<br>
-		                    <p>
-		                        <strong>User ID</strong>: <%= user.twitter.id %><br><br>
-		                        <strong>E-mail</strong>: <%= user.twitter.email %><br><br>
-		                        <strong>Name</strong>: <%= user.twitter.name %>
-		                    </p>
+                            </p>
 		                <% } else if (user.provider == 'google') { %>
 							<h3 class="text-primary"><span class="fa fa-google"></span> Google Profile</h3>
 							<br>
