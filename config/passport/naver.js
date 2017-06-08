@@ -3,8 +3,6 @@
  * 
  * 네이버 인증 방식에 사용되는 패스포트 설정
  *
- * @date 2016-11-10
- * @author Mike
  */
 
 var NaverStrategy = require('passport-naver').Strategy;

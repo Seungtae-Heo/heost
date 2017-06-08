@@ -1,8 +1,6 @@
 /**
  * 게시판을 위한 데이터베이스 스키마를 정의하는 모듈
  *
- * @date 2016-11-10
- * @author Mike
  */
 
 var utils = require('../utils/utils');

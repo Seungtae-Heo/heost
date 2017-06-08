@@ -1,8 +1,6 @@
 /**
  * 패스포트 라우팅 함수 정의
  *
- * @date 2016-11-10
- * @author Mike
  */
   
 module.exports = function(router, passport) {

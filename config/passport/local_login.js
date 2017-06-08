@@ -3,8 +3,6 @@
  * 
  * 로컬 인증방식을 사용하는 패스포트 설정
  *
- * @date 2016-11-10
- * @author Mike
  */
 
 var LocalStrategy = require('passport-local').Strategy;

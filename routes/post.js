@@ -1,8 +1,6 @@
 /*
  * 게시판을 위한 라우팅 함수 정의
  *
- * @date 2016-11-10
- * @author Mike
  */
 
 // html-entities module is required in showpost.ejs

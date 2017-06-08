@@ -4,14 +4,11 @@
  * 패스포트 설정을 위한 기본 파일로 passport 폴더에 있는 설정 파일들을 사용함
  * serializeUser, deserializeUser 메소드 설정
  *
- * @date 2016-11-10
- * @author Mike
  */
 
 var local_login = require('./passport/local_login');
 var local_signup = require('./passport/local_signup');
 var facebook = require('./passport/facebook');
-var twitter = require('./passport/twitter');
 var google = require('./passport/google');
 var naver = require('./passport/naver');
 
@@ -44,9 +41,8 @@ module.exports = function (app, passport) {
 	passport.use('local-login', local_login);
 	passport.use('local-signup', local_signup);
 	passport.use('facebook', facebook(app, passport));
-	passport.use('twitter', twitter(app, passport));
 	passport.use('google', google(app, passport));
     passport.use('naver', naver(app, passport));
-	console.log('6가지 passport 인증방식 설정됨.');
+	console.log('5가지 passport 인증방식 설정됨.');
 	
 };
