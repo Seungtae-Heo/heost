@@ -126,7 +126,7 @@ var listpost = function(req, res) {
 					
 					// 뷰 템플레이트를 이용하여 렌더링한 후 전송
 					var context = {
-						title: '글 목록',
+						title: 'Posts',
 						posts: results,
 						page: parseInt(paramPage),
 						pageCount: Math.ceil(count / paramPerPage),

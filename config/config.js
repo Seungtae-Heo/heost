@@ -17,9 +17,9 @@ module.exports = {
         ,{file:'./post', path:'/process/listpost', method:'listpost', type:'get'}
 	],
 	facebook: {		// passport facebook
-		clientID: '1442860336022433',
-		clientSecret: '13a40d84eb35f9f071b8f09de10ee734',
-		callbackURL: 'http://localhost:3000/auth/facebook/callback'
+		clientID: '135734880327081',
+		clientSecret: 'c8be0cd03e0add31f78ffdb443c7ba29',
+		callbackURL: '/auth/facebook/callback'
 	},
 	twitter: {		// passport twitter
 		clientID: 'id',
