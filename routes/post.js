@@ -200,7 +200,7 @@ var showpost = function(req, res) {
 				
 				// 뷰 템플레이트를 이용하여 렌더링한 후 전송
 				var context = {
-					title: '글 조회 ',
+					title: 'Posts ',
 					posts: results,
 					Entities: Entities
 				};
