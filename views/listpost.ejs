@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 		
-		<title>글 리스트</title>
+		<title>Posts</title>
 		
   		<link href="/public/semantic.min.css" rel="stylesheet" >
 		
@@ -63,7 +63,7 @@
     		<br>
     		
 			<div class="ui raised segment">
-				<a class="ui blue ribbon label">게시판</a>
+				<a class="ui blue ribbon label">Message Board</a>
       			<span id="board_title"><%=title %></span>
 			
 				
@@ -72,11 +72,11 @@
        		
 			      		
 						<div class="ui grid">
-			   				<div class="two wide column">번호</div>
-			   				<div class="eight wide column">제목</div>
-			   				<div class="two wide column">작성자</div>
-			   				<div class="two wide column">작성일</div>
-			   				<div class="two wide column">조회수</div>
+			   				<div class="two wide column">No.</div>
+			   				<div class="eight wide column">Title</div>
+			   				<div class="two wide column">Writer</div>
+			   				<div class="two wide column">Date</div>
+			   				<div class="two wide column">Hits</div>
 			   			</div>
 				    		
 						<div class="ui very relaxed selection celled list">
@@ -184,12 +184,12 @@
 					 	</div>
 						 	  
 						<br><br>
-						<a class="ui button" href='/process/listpost?page=0&perPage=2'>재요청</a>
-						<a class="ui button" href='/public/addpost.html'>글쓰기</a>
+						<a class="ui button" href='/process/listpost?page=0&perPage=2'>Refresh</a>
+						<a class="ui button" href='/public/addpost.html'>Writing</a>
 					
 					</div>
 				</div>
-                <a href='https://board-24545.herokuapp.com/profile'>프로필</a>
+                <a href='https://board-24545.herokuapp.com/profile'>Profile</a>
 			</div>
 		</div>
 		

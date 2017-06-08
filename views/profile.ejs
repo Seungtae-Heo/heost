@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 		
-		<title>프로필 화면</title>
+		<title>Profile Page</title>
 		
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
     	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
@@ -19,9 +19,10 @@
 		<div class="container">			
 						
 			<div class="page-header text-center">
-		        <h1><span class="fa fa-book"></span> 사용자 프로필</h1>
-                <a href="https://board-24545.herokuapp.com/process/listpost" class="btn btn-default btn-sm">게시판</a>
-		        <a href="/logout" class="btn btn-default btn-sm">로그아웃</a>
+		        <h1><span class="fa fa-book"></span> User Profile</h1>
+                <a href="/listpost" class="btn btn-default btn-sm">Board</a>
+                <a href="/public/listuser.html" class="btn btn-default btn-sm">User List</a>
+		        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
 		    </div>
 			<br>
 		    <div class="row">
@@ -30,35 +31,35 @@
 		            <div class="well">
 		            
 		            	<% if (user.provider == undefined || user.provider == '') { %>
-			                <h3><span class="fa fa-user"></span> 로컬 프로필</h3>
+			                <h3><span class="fa fa-user"></span> Profile</h3>
 							<br>
 							<p>
-								<strong>이메일</strong>: <%= user.email %><br><br>
-		                		<strong>별명</strong>: <%= user.name %>
+								<strong>User ID</strong>: <%= user.email %><br><br>
+		                		<strong>Nickname</strong>: <%= user.name %>
 			                </p>
 			            <% } else if (user.provider == 'facebook') { %>
-							<h3 class="text-primary"><span class="fa fa-facebook"></span> 페이스북 프로필</h3>
+							<h3 class="text-primary"><span class="fa fa-facebook"></span> Facebook Profile</h3>
 							<br>
 		                    <p>
-		                        <strong>아이디</strong>: <%= user.facebook.id %><br><br>
-		                        <strong>이메일</strong>: <%= user.facebook.email %><br><br>
-		                        <strong>이름</strong>: <%= user.facebook.name %>
+		                        <strong>User ID</strong>: <%= user.facebook.id %><br><br>
+		                        <strong>E-mail</strong>: <%= user.facebook.email %><br><br>
+		                        <strong>Name</strong>: <%= user.facebook.name %>
 		                    </p>
 		                <% } else if (user.provider == 'twitter') { %>
-							<h3 class="text-primary"><span class="fa fa-twitter"></span> 트위터 프로필</h3>
+							<h3 class="text-primary"><span class="fa fa-twitter"></span> Twitter Profile</h3>
 							<br>
 		                    <p>
-		                        <strong>아이디</strong>: <%= user.twitter.id %><br><br>
-		                        <strong>이메일</strong>: <%= user.twitter.email %><br><br>
-		                        <strong>이름</strong>: <%= user.twitter.name %>
+		                        <strong>User ID</strong>: <%= user.twitter.id %><br><br>
+		                        <strong>E-mail</strong>: <%= user.twitter.email %><br><br>
+		                        <strong>Name</strong>: <%= user.twitter.name %>
 		                    </p>
 		                <% } else if (user.provider == 'google') { %>
-							<h3 class="text-primary"><span class="fa fa-google"></span> 구글 프로필</h3>
+							<h3 class="text-primary"><span class="fa fa-google"></span> Google Profile</h3>
 							<br>
 		                    <p>
-		                        <strong>아이디</strong>: <%= user.google.id %><br><br>
-		                        <strong>이메일</strong>: <%= user.google.email %><br><br>
-		                        <strong>이름</strong>: <%= user.google.name %>
+		                        <strong>User ID</strong>: <%= user.google.id %><br><br>
+		                        <strong>E-mail</strong>: <%= user.google.email %><br><br>
+		                        <strong>Name</strong>: <%= user.google.name %>
 		                    </p>
 						<% } %>
 		                	

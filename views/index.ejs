@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 		
-		<title>홈 화면</title>
+		<title>Home</title>
 		
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
     	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
@@ -29,20 +29,20 @@
 	<body>
 		<div class="container">
 		    <div class="jumbotron text-center">
-		        <h1><span class="fa fa-shopping-cart"></span> 쇼핑몰 홈</h1>
+		        <h1><span class="fa fa-shopping-cart"></span> Welcome </h1>
 				<br>
 				<% if (login_success) { %>
-					<p>로그인되어 있습니다.</p>
+					<p>You are already logged in.</p>
 					<br>
-					<a href="/logout" class="btn btn-default"><span class="fa fa-user"></span>로그아웃</a>
+					<a href="/logout" class="btn btn-default"><span class="fa fa-user"></span>Logout</a>
 				<% } else { %>
-					<p>로그인하세요.<p>
-					<p>계정이 없으시면 회원가입하세요.</p>
+					<p>Log in.<p>
+					<p>If you do not have an account, sign up.</p>
 					<br>
-			        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>로그인</a>
-			        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>회원가입</a>
+			        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+			        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Sign up</a>
 					<br>
-					<a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> 페이스북으로 로그인</a>
+
 				<% } %>
 				
 		    </div>

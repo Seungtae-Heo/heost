@@ -2,20 +2,20 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>사용자 리스트 페이지</title>
+		<title>User List Page</title>
 	</head>
 	<body>
-		<h2>사용자 리스트</h2>
+		<h2>User List</h2>
 		<div>
 			<ul>
 				<% for (var i = 0; i < results.length; i++) {
 					   var curId = results[i]._doc.id;
 					   var curName = results[i]._doc.name; %>
-					   <li>#<%=i %> - 아이디 : <%=curId %>, 이름 : <%=curName %></li>
+					   <li>#<%=i %> - User ID : <%=curId %>, Nickname : <%=curName %></li>
 				<% } %>	
 			</ul>
 		</div>
-		<br><br><a href='/public/listuser.html'>다시 요청하기</a>
+		<br><br><a href='/public/listuser.html'>Retry</a>
 	</body>
 </html>
 
